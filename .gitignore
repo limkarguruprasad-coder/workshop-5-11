@@ -1,0 +1,11 @@
+my_backend/.env
+my_backend/venv/
+my_backend/__pycache__/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+
+# Local agent/runtime files and secrets
+config/
+**/.agents/
