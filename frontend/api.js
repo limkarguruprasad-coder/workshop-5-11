@@ -1,7 +1,7 @@
 /* Shared client for the event API. Set window.EVENT_API_BASE_URL before this
    file to override the deployed backend during local development. */
 (function (window) {
-  const defaultBaseUrl = 'https://workshop-5-11.onrender.com';
+  const defaultBaseUrl = 'https://zero5nov-workshop.onrender.com';
   const baseUrl = (window.EVENT_API_BASE_URL || localStorage.getItem('eventApiBaseUrl') || defaultBaseUrl).replace(/\/$/, '');
   const tokenKey = 'eventpulse.accessToken';
 
