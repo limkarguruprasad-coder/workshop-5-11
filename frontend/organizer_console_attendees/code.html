@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#653e00","on-primary-fixed-variant":"#3323cc","on-tertiary-fixed":"#001f26","on-primary-fixed":"#0f0069","tertiary":"#00505f","on-error":"#ffffff","secondary-fixed":"#ffddb8","on-background":"#131b2e","on-secondary":"#ffffff","primary-container":"#4f46e5","surface-container-high":"#e2e7ff","on-primary-container":"#dad7ff","error":"#ba1a1a","error-container":"#ffdad6","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary":"#ffffff","outline-variant":"#c7c4d8","surface-container-lowest":"#ffffff","inverse-primary":"#c3c0ff","surface-container-highest":"#dae2fd","surface-container-low":"#f2f3ff","background":"#faf8ff","on-secondary-fixed":"#2a1700","surface-dim":"#d2d9f4","primary-fixed-dim":"#c3c0ff","surface-bright":"#faf8ff","on-error-container":"#93000a","secondary-container":"#fea619","tertiary-fixed":"#acedff","tertiary-fixed-dim":"#4cd7f6","primary":"#3525cd","on-surface-variant":"#464555","on-tertiary-container":"#93e8ff","tertiary-container":"#006a7c","inverse-surface":"#283044","on-secondary-container":"#684000","primary-fixed":"#e2dfff","on-primary":"#ffffff","secondary-fixed-dim":"#ffb95f","surface-tint":"#4d44e3","outline":"#777587","surface":"#faf8ff","surface-container":"#eaedff","on-tertiary-fixed-variant":"#004e5c","secondary":"#855300"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xl":"2.25rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2rem","space-md":"0.875rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-code-lg":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-ui":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-code-md":["JetBrains Mono"]},"fontSize":{"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-code-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-code-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-code-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-margin flex flex-col justify-between"><div class="h-16 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="EventHub API Platform Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">EventPulse</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Live API v1.4 • Connected</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" placeholder="Search endpoints, events, tags... (Press / to focus)" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex flex-col text-right"><span class="font-label-ui text-label-ui text-on-surface">DevCore Operations</span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Logged in as Organizer</span></div><div class="flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2EHgM2pV8agPbJnoiW3Of2JYld01jjARkqaku7xMYnWPOIszjzHf0kpUl6ZbOtwiHBnJ7Km8v68aNnqm7etSCR1pPHyZdibHbs9_YwJ6I6D4SMIEST0FupajVCo9l56DBSkDsR3Zxo3tknI9F0mapoTlWMNwRovJYGzYV5GJYK8fMu1Bbbao7pOd0lxbIQ9XRFrw6QHe2-DCIP9OBTCu-Fs_5YL4qz7jXEbZC_Blv"/><span class="material-symbols-outlined text-outline text-base pr-1 hidden sm:inline">expand_more</span></div></div></div><div class="h-12 flex items-center justify-between"><nav class="flex items-center gap-space-xs h-full py-1.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-lg"><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-events" href="#">Explore Events</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="api-explorer" href="#">API Explorer</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-registrations" href="#">My Registrations</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-headline-md rounded-lg" data-path="organizer-console" href="#">Organizer Console</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="documentation" href="#">Docs</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="font-label-code-sm text-label-code-sm text-outline">REGION</span><span class="font-label-code-sm text-label-code-sm text-primary font-semibold">us-east-1</span></div></div></div></div></header><main class="w-full pt-28 bg-background"><div class="flex flex-col w-full">
+<!-- RBAC Security & Token Banner -->
+<div class="w-full px-margin py-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary-container/10 pointer-events-none blur-3xl"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center shrink-0 shadow-sm text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Organizer Privileges Active</span>
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-semibold">evt_cloud26</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• Global Cloud &amp; API Summit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Attendee list is strictly restricted to owning organizers. Non-organizer requests resolve to <span class="font-label-code-sm text-label-code-sm text-error font-semibold">403 Forbidden</span> with audit trace logged.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end lg:self-center">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface">Scope: <code class="text-primary font-bold">events.registrations:admin</code></span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-outline-variant px-space-xs">|</span>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all cursor-pointer font-label-ui text-label-ui" id="toggleAuditBtn">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span>Debug Payload</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Header & Context Breadcrumb -->
+<div class="w-full px-margin py-space-sm flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-outline mb-1">
+<span>REST ENGINE</span>
+<span>/</span>
+<span class="text-primary font-semibold">GET /api/events/{id}/registrations</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Organizer Console: Attendee List &amp; Access Control</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Restricted attendee management and export console for event owners. Implements endpoint <code class="font-label-code-sm text-label-code-sm text-primary bg-surface-container px-1 py-0.5 rounded">/api/events/{id}/registrations</code>.</p>
+</div>
+<!-- Event Selector & Global Actions -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="relative min-w-[280px]">
+<label class="sr-only" for="eventSelector">Select Target Event</label>
+<div class="flex items-center justify-between w-full h-10 px-space-md rounded-lg bg-surface-container-lowest shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs truncate">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-ui text-label-ui text-on-surface truncate">Global Cloud Summit 2026</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">(evt_cloud26)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-base">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high shadow-sm font-label-ui text-label-ui transition-all cursor-pointer" id="exportCsvBtn">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-1.5 h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high shadow-sm font-label-ui text-label-ui transition-all cursor-pointer" id="triggerWebhookBtn">
+<span class="material-symbols-outlined text-base">webhook</span>
+<span>Trigger Webhook</span>
+</button>
+<button class="flex items-center gap-1.5 h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-sm hover:opacity-95 transition-all cursor-pointer" id="batchCheckinBtn">
+<span class="material-symbols-outlined text-base">qr_code_scanner</span>
+<span>Batch Check-In</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Realtime Analytics & Metrics Strip -->
+<div class="w-full px-margin py-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-outline uppercase tracking-wider">Total Attendees</span>
+<span class="material-symbols-outlined text-primary text-xl">group</span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface" id="metricTotal">840</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary font-bold bg-tertiary-fixed px-2 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">north</span>+14% wow
+          </span>
+</div>
+<!-- Progress Sparkline -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 84%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-code-sm text-label-code-sm text-outline">
+<span>Capacity: 1,000</span>
+<span>84.0% allocated</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-outline uppercase tracking-wider">Check-in Rate</span>
+<span class="material-symbols-outlined text-tertiary text-xl">fact_check</span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface" id="metricCheckin">62%</span>
+<span class="font-label-code-sm text-label-code-sm text-on-secondary-fixed-variant bg-secondary-fixed px-2 py-0.5 rounded-full">521 / 840 Scanned</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 62%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-code-sm text-label-code-sm text-outline">
+<span>Turnstile Delta</span>
+<span>+48 in last 30m</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-outline uppercase tracking-wider">VIP Passes</span>
+<span class="material-symbols-outlined text-primary-container text-xl">stars</span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">120</span>
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold bg-primary-fixed px-2 py-0.5 rounded-full">Tier Max</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-code-sm text-label-code-sm text-outline">
+<span>Exclusive Access</span>
+<span>100% Sold</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-outline uppercase tracking-wider">Pending Waitlist</span>
+<span class="material-symbols-outlined text-secondary text-xl">hourglass_top</span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">45</span>
+<span class="font-label-code-sm text-label-code-sm text-error font-bold bg-error-container text-on-error-container px-2 py-0.5 rounded-full">High Pressure</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 35%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-code-sm text-label-code-sm text-outline">
+<span>Auto-Release SLA</span>
+<span>2.4h avg clearance</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Attendee Registry Data Grid Section -->
+<div class="w-full px-margin py-space-sm flex-1 flex flex-col">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Search, Filtering, and Micro-controller Bar -->
+<div class="p-space-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md bg-surface-container-low/50">
+<div class="flex-1 max-w-xl relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none shadow-sm transition-all" id="attendeeSearchInput" placeholder="Search by name, email, company, or reg_id..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Tier Filter -->
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-lg shadow-sm">
+<span class="font-label-code-sm text-label-code-sm text-outline pl-1">TIER:</span>
+<select class="bg-transparent font-label-ui text-label-ui text-on-surface focus:outline-none py-1 pr-2 cursor-pointer" id="tierFilter">
+<option value="ALL">All Tiers</option>
+<option value="VIP">VIP</option>
+<option value="SPEAKER">Speaker</option>
+<option value="STANDARD">Standard</option>
+</select>
+</div>
+<!-- Status Filter -->
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-lg shadow-sm">
+<span class="font-label-code-sm text-label-code-sm text-outline pl-1">STATUS:</span>
+<select class="bg-transparent font-label-ui text-label-ui text-on-surface focus:outline-none py-1 pr-2 cursor-pointer" id="statusFilter">
+<option value="ALL">All Status</option>
+<option value="CHECKED_IN">Checked In</option>
+<option value="PENDING">Pending</option>
+<option value="CANCELLED">Cancelled</option>
+</select>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container-lowest hover:bg-surface-container shadow-sm text-on-surface transition-all cursor-pointer" id="refreshDataBtn" title="Re-fetch registrations">
+<span class="material-symbols-outlined text-lg">refresh</span>
+</button>
+</div>
+</div>
+<!-- Endpoint Schema & Query Feedback Chip -->
+<div class="px-space-md py-space-xs bg-surface-container flex items-center justify-between overflow-x-auto text-nowrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded font-label-code-sm text-label-code-sm font-bold bg-primary-fixed text-primary">GET</span>
+<span class="font-label-code-md text-label-code-md text-on-surface">/api/events/<span class="text-secondary font-semibold">evt_cloud26</span>/registrations?limit=50&amp;cursor=eyJyIjoxMDN9</span>
+</div>
+<div class="flex items-center gap-space-md font-label-code-sm text-label-code-sm text-outline">
+<span>STATUS: <span class="text-tertiary font-bold">200 OK</span></span>
+<span>LATENCY: <span class="text-on-surface font-semibold">38ms</span></span>
+<span id="filteredCountLabel">SHOWING: 4 of 840</span>
+</div>
+</div>
+<!-- Data Table View -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left table-auto">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-ui text-label-ui uppercase tracking-wider">
+<th class="py-3 px-space-md">Attendee Profile</th>
+<th class="py-3 px-space-md">Email</th>
+<th class="py-3 px-space-md">Registration ID</th>
+<th class="py-3 px-space-md">Tier</th>
+<th class="py-3 px-space-md">Registered At</th>
+<th class="py-3 px-space-md">Check-in Status</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high" id="attendeeTableBody">
+<!-- Row 1: Sarah Connor -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-status="CHECKED_IN" data-tier="VIP">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait photograph of Sarah Connor, tech leader and cyber security strategist with focused expression, studio lighting, clean background, cool indigo ambient light, corporate executive style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuL13iCiSjD_zKGRtaLaouadijv0qdp1mUatSbTQQs2ZOTR637W4fxngIWlUa-GKekIMwO2V6F8Yff2CUOqHYUF1YqkZ5J_eGqFTDISO_CIYrUKcYsuIdg9k2LgOC1MXiPq2ozDViNM_StE3980xNxJP5YDbMPI8LIrfJmlI8OnAUkm5tmBqQEIWIatRP8Ra9ZVp3wepDn71OeVyXWKQBArTYvoJjOSmfDEuQFXFAe"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-body-lg text-on-surface font-bold truncate">Sarah Connor</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Cyberdyne Systems • VP Systems</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-code-md text-label-code-md text-on-surface">s.connor@cyberdyne.io</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-code-md text-label-code-md font-semibold text-primary">reg_99a8x01b</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-code-sm text-label-code-sm font-bold bg-primary-fixed text-primary inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> VIP Pass
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">May 14, 2026, 09:22 UTC</td>
+<td class="py-space-md px-space-md">
+<span class="status-pill inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                  Checked In
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="view-raw-btn p-1.5 rounded hover:bg-surface-container text-outline hover:text-primary transition-colors cursor-pointer" data-payload='{"id":"reg_99a8x01b","name":"Sarah Connor","company":"Cyberdyne Systems","email":"s.connor@cyberdyne.io","tier":"VIP","checkedIn":true,"timestamp":"2026-05-14T09:22:15Z"}' title="View Payload">
+<span class="material-symbols-outlined text-lg">code</span>
+</button>
+<button class="revoke-btn p-1.5 rounded hover:bg-error-container text-outline hover:text-error transition-colors cursor-pointer" title="Revoke Pass">
+<span class="material-symbols-outlined text-lg">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Marcus Vance -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-status="CHECKED_IN" data-tier="SPEAKER">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait photograph of Marcus Vance, software engineer with modern stylish glasses, friendly smile, warm studio lighting with deep blue backdrop, tech conference speaker badge style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36jdNsJK1QVKh35nUNCeYoTv0XTxkg2srTdHAz9A4AjLZrFpolccX9EzjZDNbzG2xdoPiVvaHAUThlxFTlXNy4b1cB-RMoiKdQjid103StwWiu7vlfZV4RPO68lVYpJcY_N_S3e-mABS8z1Jjytuhq4MAZ-I6M0rMOLuWS95IHvWvU94uoS9ruTMQu-uc4TxfaSAzT2NILGGNQnS4FgpSoJZKluvFlg_cuF3OUrWm"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-body-lg text-on-surface font-bold truncate">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Stripe • Principal Infrastructure</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-code-md text-label-code-md text-on-surface">marcus.v@stripe.com</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-code-md text-label-code-md font-semibold text-primary">reg_77f4c98e</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-code-sm text-label-code-sm font-bold bg-secondary-fixed text-on-secondary-fixed-variant inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">record_voice_over</span> Speaker
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">May 15, 2026, 14:04 UTC</td>
+<td class="py-space-md px-space-md">
+<span class="status-pill inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                  Checked In
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="view-raw-btn p-1.5 rounded hover:bg-surface-container text-outline hover:text-primary transition-colors cursor-pointer" data-payload='{"id":"reg_77f4c98e","name":"Marcus Vance","company":"Stripe","email":"marcus.v@stripe.com","tier":"SPEAKER","checkedIn":true,"timestamp":"2026-05-15T14:04:02Z"}' title="View Payload">
+<span class="material-symbols-outlined text-lg">code</span>
+</button>
+<button class="revoke-btn p-1.5 rounded hover:bg-error-container text-outline hover:text-error transition-colors cursor-pointer" title="Revoke Pass">
+<span class="material-symbols-outlined text-lg">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Elena Rostova -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-status="PENDING" data-tier="STANDARD">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait photography of Elena Rostova, frontend engineering specialist with sharp thoughtful demeanor, minimalist indoor tech campus background, soft daylight, sharp focus on eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj_vtSeIa-w8-IrVmlihvgWDePE3Jwp864FRnLUeWA4sE1I8zoai_e-Lvu6XyorRjfmR758yiCZGexmNde_SNMWCDa1VwNMXodO0lEgo5kbOw8qs8RuOi0D5bJF85nsPoJJ7hqZbxKOyg9vpclU64Abz9cVga90pyg3hhh6aVml5CmlbWJg5yb19hlVigBJMMjc2Sicp-wi6zIkcx9mpdvKIxx1VJVOkY53Z4_WYnq"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-body-lg text-on-surface font-bold truncate">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Vercel • Staff DevRel</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-code-md text-label-code-md text-on-surface">elena.rostova@vercel.com</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-code-md text-label-code-md font-semibold text-primary">reg_31d8a44c</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-code-sm text-label-code-sm font-medium bg-surface-container text-on-surface inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">badge</span> Standard
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">May 16, 2026, 11:18 UTC</td>
+<td class="py-space-md px-space-md">
+<span class="status-pill inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-high text-on-surface-variant font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Pending Turnstile
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="checkin-action-btn px-2.5 py-1 rounded bg-primary text-on-primary font-label-ui text-label-ui shadow-sm hover:opacity-90 transition-all cursor-pointer">
+                    Check In
+                  </button>
+<button class="view-raw-btn p-1.5 rounded hover:bg-surface-container text-outline hover:text-primary transition-colors cursor-pointer" data-payload='{"id":"reg_31d8a44c","name":"Elena Rostova","company":"Vercel","email":"elena.rostova@vercel.com","tier":"STANDARD","checkedIn":false,"timestamp":"2026-05-16T11:18:49Z"}' title="View Payload">
+<span class="material-symbols-outlined text-lg">code</span>
+</button>
+<button class="revoke-btn p-1.5 rounded hover:bg-error-container text-outline hover:text-error transition-colors cursor-pointer" title="Revoke Pass">
+<span class="material-symbols-outlined text-lg">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: David Kim -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-status="CANCELLED" data-tier="VIP">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait photography of David Kim, tech architect in mid-thirties, wearing dark crewneck sweater, professional modern lighting, slate gray background with subtle violet gradient rim light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnzN36z09CnCDsNQIe4VTd0Z9iDH3OejT1E5c9tET1jTVM4pzmMX7XYI-QQefvQ_Z0mT3UQcALA1iM9TWErZP3igBOMeFZ8GJ3OFiDGhevM171lH-1nET22CDf5sLDnEUqB_qCR9k-bKDP5FNovoeEpOXnuQjT7RMSl9B55fNIf2HYpXcnstbAVMK3rclkGkcF0nSRe46DJAmK104Jf91ts3AC5g5V49DtyVJyUDUm"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-body-lg text-on-surface font-bold truncate">David Kim</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Datadog • Lead Reliability</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-code-md text-label-code-md text-on-surface">d.kim@datadoghq.com</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-code-md text-label-code-md font-semibold text-outline line-through">reg_12b55f00</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-code-sm text-label-code-sm font-bold bg-primary-fixed/40 text-on-surface-variant inline-flex items-center gap-1 opacity-70">
+<span class="material-symbols-outlined text-xs">star</span> VIP Pass
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">May 10, 2026, 18:40 UTC</td>
+<td class="py-space-md px-space-md">
+<span class="status-pill inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-error-container text-on-error-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Cancelled
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="view-raw-btn p-1.5 rounded hover:bg-surface-container text-outline hover:text-primary transition-colors cursor-pointer" data-payload='{"id":"reg_12b55f00","name":"David Kim","company":"Datadog","email":"d.kim@datadoghq.com","tier":"VIP","checkedIn":false,"cancelled":true,"timestamp":"2026-05-10T18:40:00Z"}' title="View Payload">
+<span class="material-symbols-outlined text-lg">code</span>
+</button>
+<span class="text-body-sm text-outline italic pr-2">Revoked</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Server Meta Footnote -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-code-sm text-label-code-sm">
+<div class="text-on-surface-variant">
+          Showing <span class="font-bold text-on-surface">1 - 4</span> of 840 registrations • Cursor: <span class="font-mono text-primary font-semibold">eyJyIjoxMDN9</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface shadow-sm cursor-not-allowed opacity-50" disabled="">
+            Previous
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high shadow-sm transition-all cursor-pointer font-semibold">
+            Next Page →
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime API Audit Log & Live Debug Panel (Side / Lower Section) -->
+<div class="w-full px-margin py-space-md">
+<div class="rounded-xl bg-inverse-surface text-inverse-on-surface p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-headline-md text-headline-md tracking-tight text-inverse-on-surface">Live API Debug &amp; Access Audit Log</span>
+<span class="font-label-code-sm text-label-code-sm px-2 py-0.5 rounded bg-surface-variant/20 text-tertiary-fixed">POLLING 2.0s</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code-sm text-label-code-sm text-outline-variant">Target: <code class="text-primary-fixed font-bold">/api/events/{id}/registrations</code></span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Log History stream -->
+<div class="lg:col-span-2 space-y-2 font-label-code-sm text-label-code-sm overflow-x-auto">
+<div class="flex items-center justify-between p-2.5 rounded bg-surface-variant/10 text-inverse-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary-fixed font-bold">200 OK</span>
+<span class="text-outline-variant">GET</span>
+<span class="text-primary-fixed">/api/events/evt_cloud26/registrations</span>
+<span class="text-outline-variant">?limit=50</span>
+</div>
+<div class="flex items-center gap-space-md text-outline-variant">
+<span>IP: 198.51.100.44</span>
+<span class="text-tertiary-fixed">42ms</span>
+<span>12:44:02 UTC</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded bg-surface-variant/10 text-inverse-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary-fixed font-bold">200 OK</span>
+<span class="text-outline-variant">GET</span>
+<span class="text-primary-fixed">/api/events/evt_cloud26/registrations</span>
+<span class="text-outline-variant">?status=CHECKED_IN</span>
+</div>
+<div class="flex items-center gap-space-md text-outline-variant">
+<span>IP: 198.51.100.44</span>
+<span class="text-tertiary-fixed">38ms</span>
+<span>12:43:18 UTC</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded bg-error/20 text-inverse-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="text-error-container font-bold">403 FORBIDDEN</span>
+<span class="text-outline-variant">GET</span>
+<span class="text-primary-fixed">/api/events/evt_cloud26/registrations</span>
+<span class="text-outline-variant font-sans text-xs bg-error/40 px-1 rounded text-on-error">Blocked: Bad Scope</span>
+</div>
+<div class="flex items-center gap-space-md text-outline-variant">
+<span>IP: 203.0.113.19</span>
+<span class="text-error-container">12ms</span>
+<span>12:41:05 UTC</span>
+</div>
+</div>
+</div>
+<!-- Sample Response Payload Preview -->
+<div class="rounded-lg bg-surface-container-lowest/5 p-space-md flex flex-col justify-between font-label-code-sm text-label-code-sm">
+<div>
+<div class="flex items-center justify-between text-outline-variant mb-2">
+<span>Latest Response Body</span>
+<span class="text-tertiary-fixed font-bold">JSON 200</span>
+</div>
+<pre class="text-xs text-tertiary-fixed font-mono overflow-x-auto leading-relaxed max-h-36">{
+  "event_id": "evt_cloud26",
+  "total": 840,
+  "checked_in": 521,
+  "has_more": true,
+  "cursor": "eyJyIjoxMDN9",
+  "items": [
+    { "id": "reg_99a8x01b", "vip": true }
+  ]
+}</pre>
+</div>
+<div class="mt-3 pt-2 text-outline-variant text-xs flex justify-between items-center">
+<span>Auth: Bearer JWT (Organizer)</span>
+<span class="text-secondary font-bold">SHA-256 Validated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Hidden by default) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui" id="toastTitle">Action Executed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toastDesc">Endpoint executed successfully.</span>
+</div>
+</div>
+</div>
+</div>
+<script src="../api.js"></script>
+<script>
+  (function() {
+    const searchInput = document.getElementById('attendeeSearchInput');
+    const tierFilter = document.getElementById('tierFilter');
+    const statusFilter = document.getElementById('statusFilter');
+    const tableBody = document.getElementById('attendeeTableBody');
+    const countLabel = document.getElementById('filteredCountLabel');
+    const metricTotal = document.getElementById('metricTotal');
+    const metricCheckin = document.getElementById('metricCheckin');
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastDesc = document.getElementById('toastDesc');
+    const toastIcon = document.getElementById('toastIcon');
+
+    function showToast(title, message, icon = 'check_circle') {
+      toastTitle.textContent = title;
+      toastDesc.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+
+    const targetEventId = new URLSearchParams(window.location.search).get('event') || 'evt_cloud26';
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+    }
+
+    async function loadLiveAttendees() {
+      try {
+        const registrations = await EventApi.getEventRegistrations(targetEventId);
+        const rows = Array.isArray(registrations) ? registrations : (registrations.registrations || []);
+        tableBody.innerHTML = rows.map((registration, index) => {
+          const name = registration.name || registration.full_name || registration.email || 'Registered attendee';
+          const email = registration.email || registration.attendee_email || '—';
+          const tier = String(registration.tier || registration.ticket_tier || 'STANDARD').toUpperCase();
+          const status = String(registration.status || (registration.checked_in ? 'CHECKED_IN' : 'REGISTERED')).toUpperCase();
+          return '<tr class="hover:bg-surface-container-low/40 transition-colors group" data-status="' + escapeHtml(status) + '" data-tier="' + escapeHtml(tier) + '">' +
+            '<td class="px-4 py-3 font-medium">' + escapeHtml(name) + '</td>' +
+            '<td class="px-4 py-3 text-on-surface-variant">' + escapeHtml(email) + '</td>' +
+            '<td class="px-4 py-3">' + escapeHtml(tier) + '</td>' +
+            '<td class="px-4 py-3"><span class="status-pill">' + escapeHtml(status) + '</span></td>' +
+            '<td class="px-4 py-3 text-right font-mono text-xs">' + escapeHtml(registration.id || ('registration-' + (index + 1))) + '</td>' +
+          '</tr>';
+        }).join('');
+        const checkedIn = rows.filter(item => item.checked_in === true || String(item.status || '').toUpperCase() === 'CHECKED_IN').length;
+        if (metricTotal) metricTotal.textContent = rows.length;
+        if (metricCheckin) metricCheckin.textContent = rows.length ? Math.round((checkedIn / rows.length) * 100) + '%' : '0%';
+        filterRows();
+        showToast('Synchronized', 'Loaded ' + rows.length + ' attendee(s) from GET /api/events/' + targetEventId + '/registrations.', 'sync');
+      } catch (error) {
+        showToast(error.status === 403 ? 'Organizer access required' : 'Unable to load attendees', error.message, 'warning');
+      }
+    }
+
+    function filterRows() {
+      const query = (searchInput.value || '').toLowerCase().trim();
+      const selectedTier = tierFilter.value;
+      const selectedStatus = statusFilter.value;
+
+      const rows = tableBody.querySelectorAll('tr');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowTier = row.getAttribute('data-tier') || '';
+        const rowStatus = row.getAttribute('data-status') || '';
+
+        const matchesQuery = query === '' || text.includes(query);
+        const matchesTier = selectedTier === 'ALL' || rowTier === selectedTier;
+        const matchesStatus = selectedStatus === 'ALL' || rowStatus === selectedStatus;
+
+        if (matchesQuery && matchesTier && matchesStatus) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      countLabel.textContent = `SHOWING: ${visibleCount} of 840`;
+    }
+
+    if (searchInput) searchInput.addEventListener('input', filterRows);
+    if (tierFilter) tierFilter.addEventListener('change', filterRows);
+    if (statusFilter) statusFilter.addEventListener('change', filterRows);
+
+    // Wire action buttons
+    document.querySelectorAll('.checkin-action-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const row = e.target.closest('tr');
+        const statusCell = row.querySelector('.status-pill');
+        if (statusCell) {
+          statusCell.className = 'status-pill inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold';
+          statusCell.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Checked In';
+          row.setAttribute('data-status', 'CHECKED_IN');
+        }
+        btn.remove();
+        showToast('Turnstile Pass Scanned', 'Attendee status updated via PATCH /api/events/evt_cloud26/registrations/{id}');
+      });
+    });
+
+    document.querySelectorAll('.revoke-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        showToast('Access Revoked', 'Attendee access code marked revoked with 403 authorization lock.', 'warning');
+      });
+    });
+
+    document.querySelectorAll('.view-raw-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const payload = btn.getAttribute('data-payload');
+        showToast('Payload Inspected', `JSON Object: ${payload}`, 'data_object');
+      });
+    });
+
+    document.getElementById('exportCsvBtn')?.addEventListener('click', () => {
+      showToast('Export Triggered', 'Compiling 840 registrations into signed CSV streaming link...');
+    });
+
+    document.getElementById('triggerWebhookBtn')?.addEventListener('click', () => {
+      showToast('Webhook Dispatched', 'Dispatched event `registration.batch_sync` to configured endpoint.', 'send');
+    });
+
+    document.getElementById('batchCheckinBtn')?.addEventListener('click', () => {
+      showToast('Batch Check-In Ready', 'Scan turnstile queue or upload offline RFID manifest.', 'qr_code_scanner');
+    });
+
+    document.getElementById('refreshDataBtn')?.addEventListener('click', loadLiveAttendees);
+    document.addEventListener('DOMContentLoaded', loadLiveAttendees);
+
+    document.getElementById('toggleAuditBtn')?.addEventListener('click', () => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="EventHub API Platform Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-body-md text-on-surface-variant">EventPulse Engine</span></div><span class="font-body-sm text-body-sm text-outline">© 2025 DevEvent Core Infrastructure. All rights reserved.</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">API Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Rate Limits</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">SDKs &amp; Webhooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Security RFC</a></div></div></footer></body></html>

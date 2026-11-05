@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#653e00","on-primary-fixed-variant":"#3323cc","on-tertiary-fixed":"#001f26","on-primary-fixed":"#0f0069","tertiary":"#00505f","on-error":"#ffffff","secondary-fixed":"#ffddb8","on-background":"#131b2e","on-secondary":"#ffffff","primary-container":"#4f46e5","surface-container-high":"#e2e7ff","on-primary-container":"#dad7ff","error":"#ba1a1a","error-container":"#ffdad6","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary":"#ffffff","outline-variant":"#c7c4d8","surface-container-lowest":"#ffffff","inverse-primary":"#c3c0ff","surface-container-highest":"#dae2fd","surface-container-low":"#f2f3ff","background":"#faf8ff","on-secondary-fixed":"#2a1700","surface-dim":"#d2d9f4","primary-fixed-dim":"#c3c0ff","surface-bright":"#faf8ff","on-error-container":"#93000a","secondary-container":"#fea619","tertiary-fixed":"#acedff","tertiary-fixed-dim":"#4cd7f6","primary":"#3525cd","on-surface-variant":"#464555","on-tertiary-container":"#93e8ff","tertiary-container":"#006a7c","inverse-surface":"#283044","on-secondary-container":"#684000","primary-fixed":"#e2dfff","on-primary":"#ffffff","secondary-fixed-dim":"#ffb95f","surface-tint":"#4d44e3","outline":"#777587","surface":"#faf8ff","surface-container":"#eaedff","on-tertiary-fixed-variant":"#004e5c","secondary":"#855300"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xl":"2.25rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2rem","space-md":"0.875rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-code-lg":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-ui":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-code-md":["JetBrains Mono"]},"fontSize":{"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-code-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-code-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-code-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-margin flex flex-col justify-between"><div class="h-16 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="EventHub API Platform Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">EventPulse</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Live API v1.4 • Connected</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" placeholder="Search endpoints, events, tags... (Press / to focus)" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex flex-col text-right"><span class="font-label-ui text-label-ui text-on-surface">DevCore Operations</span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Logged in as Organizer</span></div><div class="flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2EHgM2pV8agPbJnoiW3Of2JYld01jjARkqaku7xMYnWPOIszjzHf0kpUl6ZbOtwiHBnJ7Km8v68aNnqm7etSCR1pPHyZdibHbs9_YwJ6I6D4SMIEST0FupajVCo9l56DBSkDsR3Zxo3tknI9F0mapoTlWMNwRovJYGzYV5GJYK8fMu1Bbbao7pOd0lxbIQ9XRFrw6QHe2-DCIP9OBTCu-Fs_5YL4qz7jXEbZC_Blv"/><span class="material-symbols-outlined text-outline text-base pr-1 hidden sm:inline">expand_more</span></div></div></div><div class="h-12 flex items-center justify-between"><nav class="flex items-center gap-space-xs h-full py-1.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-lg"><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-events" href="#">Explore Events</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="api-explorer" href="#">API Explorer</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-headline-md rounded-lg" data-path="my-registrations" href="#">My Registrations</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organizer-console" href="#">Organizer Console</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="documentation" href="#">Docs</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="font-label-code-sm text-label-code-sm text-outline">REGION</span><span class="font-label-code-sm text-label-code-sm text-primary font-semibold">us-east-1</span></div></div></div></div></header><main class="w-full pt-28 bg-background"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-xl max-w-7xl mx-auto">
+<!-- Top Identity & Endpoint Telemetry Strip -->
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-code-sm text-label-code-sm text-primary font-semibold tracking-wide uppercase">REST Endpoint</span>
+<span class="font-label-code-md text-label-code-md text-on-surface-variant font-medium">GET /api/me/registrations</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary-container flex items-center gap-1 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+            Sync Frequency: 30s
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">My Registrations &amp; Tickets</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Manage your registered conferences, ticket QR codes, and API webhooks for <code class="font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-primary">/api/me/registrations</code>.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm self-stretch sm:self-auto">
+<button class="flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-ui text-label-ui shadow-sm transition-all" id="toggleJsonBtn" onclick="toggleJsonDrawer()">
+<span class="material-symbols-outlined text-base text-primary">data_object</span>
+<span>Inspect Payload</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-md hover:opacity-95 transition-all" onclick="scrollToRegisterForm()">
+<span class="material-symbols-outlined text-base">add_circle</span>
+<span>POST Registration</span>
+</button>
+</div>
+</div>
+<!-- User Profile & Metric Banners (Bento Grid Header) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Profile Card & Token Metadata -->
+<div class="md:col-span-12 lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Close up professional portrait of Alex Mercer, tech engineer with modern glasses in soft natural studio lighting with dark background, crisp detail, indigo ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNzCgQQatOti1KJBe4tpmpxPQ0EJFuAAMPafI6g9mgPhpM54la3Wt3Geyy_F80AC8-tp2hqxx83CysCvvUbD9tQh01ONQun6t-NSmtDlPYDBjjiECLpCgTURXs_hyuSy8DCQ8y2tO2uvUGjTvva_v-LBByYnQ-JwC4V13vP6dhxpgqBWvtSZzGrLJVv5kesIG1HoSMiO9yZoA8TZxKS8HIxZaxKT3moSbGXOKS63K5"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary-container shadow-sm"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Alex Mercer</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-code-sm text-label-code-sm uppercase">Staff Dev</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">alex.mercer@devcore.internal</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-xl">verified_user</span>
+</div>
+<!-- Token Pill and Scope Guard -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-ui text-label-ui">
+<span class="flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-sm text-secondary-container">key</span> Client Token
+            </span>
+<span class="font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">Active • 24d left</span>
+</div>
+<div class="flex items-center justify-between gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface truncate font-semibold">dev_tok_9941a8e23f990a1b</span>
+<button class="text-primary hover:opacity-75" onclick="navigator.clipboard.writeText('dev_tok_9941a8e23f990a1b'); showToast('Token copied to clipboard');" title="Copy token">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-code-sm text-label-code-sm">
+<span class="text-outline">Scope:</span>
+<span class="text-tertiary font-medium">user:registrations:read</span>
+<span class="text-outline">•</span>
+<span class="text-tertiary font-medium">user:registrations:write</span>
+</div>
+</div>
+</div>
+<!-- KPI 1: Active Registrations with Mini Visual Sparkline -->
+<div class="md:col-span-4 lg:col-span-2 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-on-surface-variant">Active Passes</span>
+<span class="p-2 rounded-lg bg-primary-fixed text-primary">
+<span class="material-symbols-outlined text-lg">confirmation_number</span>
+</span>
+</div>
+<div class="mt-2 flex flex-col gap-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">4</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">All syncs healthy</span>
+</div>
+</div>
+<div class="w-full h-8 mt-2 flex items-end gap-1">
+<div class="w-1/4 h-3 bg-surface-container rounded-t"></div>
+<div class="w-1/4 h-5 bg-surface-container rounded-t"></div>
+<div class="w-1/4 h-4 bg-surface-container rounded-t"></div>
+<div class="w-1/4 h-7 bg-primary-container rounded-t"></div>
+</div>
+</div>
+<!-- KPI 2: Upcoming This Week -->
+<div class="md:col-span-4 lg:col-span-2 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-on-surface-variant">Due This Week</span>
+<span class="p-2 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-lg">event_upcoming</span>
+</span>
+</div>
+<div class="mt-2 flex flex-col gap-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">1</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">In 3 Days: React Nexus</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-3">
+<div class="bg-secondary-container h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- KPI 3: Certificates & Badges -->
+<div class="md:col-span-4 lg:col-span-3 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-on-surface-variant">Verified Badges</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-lg">workspace_premium</span>
+</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cryptographically signed</span>
+</div>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-label-code-sm text-label-code-sm font-bold shadow-sm">K8S</div>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-label-code-sm text-label-code-sm font-bold shadow-sm">API</div>
+</div>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-primary font-medium hover:underline cursor-pointer flex items-center gap-1 pt-2">
+          Verify on Ledger <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Interactive Live Response Payload Drawer (Collapsible) -->
+<div class="hidden transition-all duration-300" id="jsonPreviewDrawer">
+<div class="rounded-xl bg-inverse-surface p-space-lg shadow-xl text-inverse-on-surface">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-outline-variant/20">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded font-label-code-sm text-label-code-sm bg-primary-container text-on-primary font-bold">GET</span>
+<span class="font-label-code-md text-label-code-md text-on-primary-container">/api/me/registrations</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary-fixed font-label-code-sm text-label-code-sm">200 OK</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">Latency: 42ms</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-high/10 hover:bg-surface-container-high/20 font-label-code-sm text-label-code-sm text-inverse-on-surface flex items-center gap-1" onclick="copyRawJson()">
+<span class="material-symbols-outlined text-sm">content_copy</span> Copy JSON
+            </button>
+<button class="text-outline hover:text-inverse-on-surface" onclick="toggleJsonDrawer()">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+<pre class="font-label-code-sm text-label-code-sm text-inverse-on-surface overflow-x-auto max-h-72 leading-relaxed selection:bg-primary-container selection:text-white" id="jsonContentArea"><code>{
+  "status": "success",
+  "data": {
+    "total": 3,
+    "user_id": "usr_9941a8",
+    "registrations": [
+      {
+        "id": "reg_gc_2026_01",
+        "event_id": "evt_summit_cloud_99",
+        "event_title": "Global Cloud &amp; API Summit 2026",
+        "date": "2026-11-18T09:00:00Z",
+        "tier": "VIP Developer",
+        "status": "confirmed",
+        "seat_tier": "VIP-L1-44",
+        "qr_code_hash": "sha256:d8a221f0b094"
+      },
+      {
+        "id": "reg_rx_2026_02",
+        "event_id": "evt_frontend_nexus_22",
+        "event_title": "React &amp; Modern Frontend Nexus",
+        "date": "2026-11-05T10:00:00Z",
+        "tier": "General Admission",
+        "status": "confirmed",
+        "seat_tier": "GA-B9",
+        "access_link": "https://stream.eventpulse.internal/live/nexus"
+      },
+      {
+        "id": "reg_ai_2026_03",
+        "event_id": "evt_ai_agents_llm_77",
+        "event_title": "AI Agents &amp; LLM Infrastructure Expo",
+        "date": "2026-12-02T08:30:00Z",
+        "tier": "Workshop Pass",
+        "status": "pending_approval",
+        "note": "409 Conflict Resolved: Rescheduled to Cohort B"
+      }
+    ]
+  }
+}</code></pre>
+</div>
+</div>
+<!-- Main Content Area: Passes & Form in Asymmetrical Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Active Registrations (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Registered Conferences</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-code-sm text-label-code-sm text-primary font-bold">3 Records</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-ui text-label-ui">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+<span>Sorted by Date (Asc)</span>
+</div>
+</div>
+<!-- Registration Cards Stack -->
+<div class="flex flex-col gap-space-md" id="registrationsListContainer">
+<!-- Card 1: VIP Developer (Global Cloud Summit) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col md:flex-row justify-between gap-space-md relative overflow-hidden group" id="card-reg-01">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex gap-space-md items-start">
+<div class="w-16 h-16 rounded-lg bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-label-ui text-label-ui text-primary uppercase font-bold">NOV</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">18</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-code-sm text-label-code-sm font-semibold">VIP Developer</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Confirmed
+                  </span>
+<span class="font-label-code-sm text-label-code-sm text-outline">reg_gc_2026_01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Global Cloud &amp; API Summit 2026</h3>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm flex-wrap mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">pin_drop</span> San Francisco, CA &amp; Virtual
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">event_seat</span> Seat VIP-L1-44
+                  </span>
+<span class="flex items-center gap-1 font-label-code-sm text-label-code-sm text-primary">
+<span class="material-symbols-outlined text-sm">schedule</span> 09:00 PST
+                  </span>
+</div>
+</div>
+</div>
+<!-- Ticket Action Suite -->
+<div class="flex md:flex-col items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-t-0 border-surface-container">
+<div class="flex items-center gap-space-xs w-full md:w-auto justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-primary-fixed text-primary font-label-ui text-label-ui hover:bg-primary-container hover:text-on-primary transition-colors flex items-center gap-1 shadow-sm" onclick="openQrModal('Global Cloud &amp; API Summit 2026', 'VIP Developer Pass', 'reg_gc_2026_01', 'ALEX MERCER - SEAT L1-44')">
+<span class="material-symbols-outlined text-base">qr_code_2</span>
+<span>View QR</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="showToast('Downloading ticket PDF ticket-reg_gc_2026_01.pdf')" title="Download PDF Ticket">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="showToast('Event added to Google / iCal Calendar')" title="Add to Calendar">
+<span class="material-symbols-outlined text-base">calendar_add_on</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="cancelRegistration('card-reg-01', 'reg_gc_2026_01')" title="Cancel (DELETE /api/registrations/reg_gc_2026_01)">
+<span class="material-symbols-outlined text-base">cancel</span>
+</button>
+</div>
+<span class="hidden md:inline font-label-code-sm text-label-code-sm text-outline">Verified Ticket ID: 4492-AX</span>
+</div>
+</div>
+<!-- Card 2: General Admission (React Nexus) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col md:flex-row justify-between gap-space-md relative overflow-hidden group" id="card-reg-02">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex gap-space-md items-start">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low flex flex-col items-center justify-center shrink-0">
+<span class="font-label-ui text-label-ui text-secondary font-bold uppercase">NOV</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">05</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm font-semibold">General Admission</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Confirmed
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-code-sm text-label-code-sm font-bold">This Week</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">React &amp; Modern Frontend Nexus</h3>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm flex-wrap mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">sensors</span> Online Streaming Hub
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">badge</span> Gate B9
+                  </span>
+</div>
+</div>
+</div>
+<!-- Action Suite -->
+<div class="flex md:flex-col items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-t-0 border-surface-container">
+<div class="flex items-center gap-space-xs w-full md:w-auto justify-end">
+<a class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-ui text-label-ui hover:bg-on-secondary-container transition-colors flex items-center gap-1 shadow-sm" href="#" onclick="showToast('Redirecting to secure live feed stream...')">
+<span class="material-symbols-outlined text-base">login</span>
+<span>Stream Access</span>
+</a>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openQrModal('React &amp; Modern Frontend Nexus', 'General Admission', 'reg_rx_2026_02', 'ALEX MERCER - STREAM GA-B9')" title="Show QR Code">
+<span class="material-symbols-outlined text-base">qr_code_2</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="cancelRegistration('card-reg-02', 'reg_rx_2026_02')" title="Cancel (DELETE /api/registrations/reg_rx_2026_02)">
+<span class="material-symbols-outlined text-base">cancel</span>
+</button>
+</div>
+<span class="hidden md:inline font-label-code-sm text-label-code-sm text-outline">Access URL verified</span>
+</div>
+</div>
+<!-- Card 3: AI Agents Expo (Pending Approval / 409 Conflict Resolved) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col md:flex-row justify-between gap-space-md relative overflow-hidden group" id="card-reg-03">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-fixed-dim"></div>
+<div class="flex gap-space-md items-start">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low flex flex-col items-center justify-center shrink-0">
+<span class="font-label-ui text-label-ui text-on-surface-variant font-bold uppercase">DEC</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">02</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm font-semibold">Workshop Pass</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-code-sm text-label-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span> Pending Approval
+                  </span>
+<span class="font-label-code-sm text-label-code-sm text-outline">reg_ai_2026_03</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">AI Agents &amp; LLM Infrastructure Expo</h3>
+<div class="p-space-xs rounded bg-surface-container-low text-on-surface-variant font-label-code-sm text-label-code-sm flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-sm text-secondary-container">sync_problem</span>
+<span>HTTP 409 Seat Conflict automatically re-routed to Cohort B. Awaiting seat re-issuance.</span>
+</div>
+</div>
+</div>
+<!-- Action Suite -->
+<div class="flex md:flex-col items-end justify-between gap-space-sm pt-2 md:pt-0 border-t md:border-t-0 border-surface-container">
+<div class="flex items-center gap-space-xs w-full md:w-auto justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-ui text-label-ui hover:bg-surface-container-high transition-colors flex items-center gap-1 shadow-sm" onclick="showToast('Re-triggering webhook sync /api/registrations/reg_ai_2026_03/sync...')">
+<span class="material-symbols-outlined text-base">refresh</span>
+<span>Re-check Status</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="cancelRegistration('card-reg-03', 'reg_ai_2026_03')" title="Cancel (DELETE /api/registrations/reg_ai_2026_03)">
+<span class="material-symbols-outlined text-base">cancel</span>
+</button>
+</div>
+<span class="hidden md:inline font-label-code-sm text-label-code-sm text-secondary">Queue pos: #2</span>
+</div>
+</div>
+</div>
+<!-- Webhook Integration Notice Bar -->
+<div class="rounded-xl bg-surface-container p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">webhook</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui text-on-surface">Registered Webhook Listener</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">https://ops.devcore.internal/events/webhooks • Event: <code class="text-primary font-semibold">ticket.issued</code></span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-code-sm text-label-code-sm font-semibold shadow-sm hover:bg-primary hover:text-on-primary transition-all" onclick="showToast('Webhook payload test dispatched: 200 OK')">
+            Ping Webhook
+          </button>
+</div>
+</div>
+<!-- Right Column: Registration Shortcut & Schema Inspector (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg" id="registrationShortcutSection">
+<!-- Registration Form Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-code-sm text-label-code-sm bg-tertiary-container text-on-tertiary font-bold">POST</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Register via ID</span>
+</div>
+<span class="material-symbols-outlined text-outline text-lg" title="Calls POST /api/registrations">terminal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quickly bind a conference pass directly to your authenticated profile via raw Event ID.
+          </p>
+<form class="flex flex-col gap-space-md" id="quickRegisterForm" onsubmit="handleRegistrationSubmit(event)">
+<!-- Event ID Input -->
+<div class="flex flex-col gap-1">
+<label class="font-label-ui text-label-ui text-on-surface flex items-center justify-between" for="eventIdInput">
+<span>Event Identifier</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">evt_[a-z0-9_]</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">tag</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-label-code-md text-label-code-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" id="eventIdInput" name="eventId" placeholder="evt_distributed_sys_2026" required="" type="text" value="evt_dist_sys_2026"/>
+</div>
+</div>
+<!-- Ticket Tier Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-label-ui text-label-ui text-on-surface" for="ticketTierSelect">Ticket Tier Pass</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">badge</span>
+<select class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all appearance-none cursor-pointer" id="ticketTierSelect" name="tier">
+<option value="VIP Developer">VIP Developer (All Workshops &amp; Lounge)</option>
+<option selected="" value="General Admission">General Admission Pass</option>
+<option value="Workshop Pass">Workshop Only Pass</option>
+<option value="Virtual Live Stream">Virtual Streaming Access</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline text-lg pointer-events-none">unfold_more</span>
+</div>
+</div>
+<!-- Additional Notes / Meta -->
+<div class="flex flex-col gap-1">
+<label class="font-label-ui text-label-ui text-on-surface" for="orgAffiliation">Affiliation Metadata (Optional)</label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" id="orgAffiliation" placeholder="DevCore Operations &amp; Architecture" type="text" value="DevCore Operations"/>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-11 rounded-lg bg-primary-container text-on-primary font-headline-md text-body-md font-semibold flex items-center justify-center gap-space-xs shadow-md hover:bg-on-primary-fixed-variant transition-all mt-1" id="submitPostBtn" type="submit">
+<span class="material-symbols-outlined text-base">send</span>
+<span>Submit POST /api/registrations</span>
+</button>
+</form>
+<!-- Status / Execution Feedback Log -->
+<div class="hidden rounded-lg p-space-sm font-label-code-sm text-label-code-sm flex flex-col gap-1" id="formFeedbackBox">
+<!-- Dynamic feedback injection -->
+</div>
+</div>
+<!-- API Contract Specs Quick Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-on-surface-variant font-bold uppercase tracking-wider">HTTP Operations Matrix</span>
+<span class="material-symbols-outlined text-outline text-base">info</span>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-code-sm text-label-code-sm bg-primary-container text-on-primary font-bold">GET</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface font-semibold">/api/me/registrations</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">200 OK</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-code-sm text-label-code-sm bg-tertiary-container text-on-tertiary font-bold">POST</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface font-semibold">/api/registrations</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">201 Created</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-code-sm text-label-code-sm bg-error text-on-error font-bold">DEL</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface font-semibold">/api/registrations/{id}</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">204 No Content</span>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span>Rate limit remaining:</span>
+<span class="font-label-code-sm text-label-code-sm text-primary font-semibold">4,982 / 5,000 req/hr</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Digital Ticket QR Pass -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-space-md" id="qrModal">
+<div class="w-full max-w-md rounded-2xl bg-surface-container-lowest shadow-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Ticket Header with Cutout Styling -->
+<div class="bg-primary-container p-space-lg text-on-primary flex flex-col gap-space-xs relative">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm uppercase tracking-widest text-on-primary-container font-bold">Official Event Pass</span>
+<button class="text-on-primary-container hover:text-white transition-colors" onclick="closeQrModal()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight mt-1" id="modalEventTitle">Global Cloud &amp; API Summit 2026</h3>
+<span class="font-label-ui text-label-ui text-on-primary-container" id="modalTicketTier">VIP Developer Pass</span>
+</div>
+<!-- Ticket Body with SVG QR Representation -->
+<div class="p-space-lg flex flex-col items-center gap-space-md text-center bg-surface-bright">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-md flex items-center justify-center flex-col">
+<!-- Inline High Precision SVG QR Mockup -->
+<svg class="w-48 h-48 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- Finder pattern top-left -->
+<rect fill="currentColor" height="26" rx="2" width="26" x="5" y="5"></rect>
+<rect fill="#FFFFFF" height="20" rx="1" width="20" x="8" y="8"></rect>
+<rect fill="currentColor" height="12" width="12" x="12" y="12"></rect>
+<!-- Finder pattern top-right -->
+<rect fill="currentColor" height="26" rx="2" width="26" x="69" y="5"></rect>
+<rect fill="#FFFFFF" height="20" rx="1" width="20" x="72" y="8"></rect>
+<rect fill="currentColor" height="12" width="12" x="76" y="12"></rect>
+<!-- Finder pattern bottom-left -->
+<rect fill="currentColor" height="26" rx="2" width="26" x="5" y="69"></rect>
+<rect fill="#FFFFFF" height="20" rx="1" width="20" x="8" y="72"></rect>
+<rect fill="currentColor" height="12" width="12" x="12" y="76"></rect>
+<!-- QR data clusters -->
+<rect height="4" width="4" x="36" y="8"></rect>
+<rect height="8" width="4" x="44" y="8"></rect>
+<rect height="4" width="8" x="52" y="12"></rect>
+<rect height="4" width="8" x="36" y="20"></rect>
+<rect height="4" width="4" x="48" y="24"></rect>
+<rect height="8" width="4" x="56" y="20"></rect>
+<rect height="4" width="8" x="8" y="36"></rect>
+<rect height="8" width="4" x="20" y="36"></rect>
+<rect height="4" width="4" x="28" y="40"></rect>
+<rect height="8" width="8" x="36" y="36"></rect>
+<rect height="4" width="4" x="48" y="36"></rect>
+<rect height="4" width="12" x="56" y="36"></rect>
+<rect height="8" width="4" x="76" y="36"></rect>
+<rect height="4" width="4" x="88" y="36"></rect>
+<rect height="8" width="4" x="8" y="48"></rect>
+<rect height="4" width="8" x="20" y="48"></rect>
+<rect height="12" width="4" x="32" y="48"></rect>
+<rect height="4" width="12" x="44" y="48"></rect>
+<rect height="8" width="4" x="64" y="44"></rect>
+<rect height="4" width="8" x="72" y="48"></rect>
+<rect height="8" width="8" x="84" y="48"></rect>
+<rect height="4" width="8" x="8" y="60"></rect>
+<rect height="4" width="4" x="20" y="60"></rect>
+<rect height="4" width="4" x="40" y="64"></rect>
+<rect height="8" width="8" x="48" y="60"></rect>
+<rect height="4" width="4" x="60" y="60"></rect>
+<rect height="4" width="8" x="68" y="64"></rect>
+<rect height="4" width="12" x="80" y="60"></rect>
+<rect height="4" width="8" x="36" y="76"></rect>
+<rect height="8" width="4" x="48" y="72"></rect>
+<rect height="4" width="8" x="60" y="76"></rect>
+<rect height="8" width="4" x="72" y="72"></rect>
+<rect height="8" width="8" x="84" y="76"></rect>
+<rect height="8" width="4" x="36" y="84"></rect>
+<rect height="4" width="12" x="44" y="88"></rect>
+<rect height="4" width="4" x="64" y="84"></rect>
+<rect height="8" width="8" x="72" y="84"></rect>
+</svg>
+<span class="font-label-code-sm text-label-code-sm text-outline mt-2 tracking-wide font-medium" id="modalHashLabel">HASH: SHA256-D8A221F0B094</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="modalSeatLabel">Alex Mercer • Seat VIP-L1-44</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Present this screen or Apple Wallet pass at registration gate.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full pt-2">
+<button class="flex-1 py-2 rounded-lg bg-surface-container-high text-primary font-label-ui text-label-ui hover:bg-surface-container font-semibold transition-colors flex items-center justify-center gap-1" onclick="showToast('Apple Wallet pass sent to mobile device'); closeQrModal();">
+<span class="material-symbols-outlined text-sm">phone_iphone</span> Save to Phone
+          </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-ui text-label-ui hover:bg-surface-container transition-colors flex items-center gap-1" onclick="window.print()">
+<span class="material-symbols-outlined text-sm">print</span> Print
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 hidden rounded-xl bg-inverse-surface text-inverse-on-surface px-space-md py-3 shadow-xl font-label-code-sm text-label-code-sm flex items-center gap-space-sm" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary-fixed text-base">check_circle</span>
+<span id="toastMessageText">Action completed successfully.</span>
+</div>
+<!-- Micro-interactions Javascript -->
+<script src="../api.js"></script>
+<script>
+    function toggleJsonDrawer() {
+      const drawer = document.getElementById('jsonPreviewDrawer');
+      const btn = document.getElementById('toggleJsonBtn');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+      } else {
+        drawer.classList.add('hidden');
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      }
+    }
+
+    function scrollToRegisterForm() {
+      const formSection = document.getElementById('registrationShortcutSection');
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const input = document.getElementById('eventIdInput');
+      input.focus();
+      input.classList.add('shadow-[0_0_0_3px_#4f46e5]');
+      setTimeout(() => input.classList.remove('shadow-[0_0_0_3px_#4f46e5]'), 1500);
+    }
+
+    function openQrModal(title, tier, id, seat) {
+      document.getElementById('modalEventTitle').innerText = title;
+      document.getElementById('modalTicketTier').innerText = tier;
+      document.getElementById('modalHashLabel').innerText = 'REG-ID: ' + id.toUpperCase();
+      document.getElementById('modalSeatLabel').innerText = seat;
+      document.getElementById('qrModal').classList.remove('hidden');
+    }
+
+    function closeQrModal() {
+      document.getElementById('qrModal').classList.add('hidden');
+    }
+
+    function copyRawJson() {
+      const json = document.getElementById('jsonContentArea').innerText;
+      navigator.clipboard.writeText(json);
+      showToast('Payload copied to clipboard');
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const text = document.getElementById('toastMessageText');
+      text.innerText = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3200);
+    }
+
+    function cancelRegistration(cardId, regId) {
+      if (confirm('Cancel this registration? This triggers DELETE /api/registrations/' + regId)) {
+        const card = document.getElementById(cardId);
+        if (card) {
+          card.style.opacity = '0.4';
+          card.style.transform = 'scale(0.98)';
+          setTimeout(() => {
+            card.remove();
+            showToast('Registration ' + regId + ' revoked (HTTP 204 No Content)');
+          }, 350);
+        }
+      }
+    }
+
+    async function loadLiveRegistrations(showMessage) {
+      try {
+        const registrations = await EventApi.getMyRegistrations();
+        const json = document.getElementById('jsonContentArea');
+        if (json) json.innerText = JSON.stringify(registrations, null, 2);
+        if (showMessage) showToast('Registrations synchronized', 'Loaded ' + registrations.length + ' registration(s) from the backend.');
+        return registrations;
+      } catch (error) {
+        if (showMessage || error.status !== 401) showToast('Unable to load registrations', error.message);
+        return [];
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => loadLiveRegistrations(false));
+
+    function handleRegistrationSubmit(event) {
+      event.preventDefault();
+      const submitBtn = document.getElementById('submitPostBtn');
+      const eventId = document.getElementById('eventIdInput').value.trim();
+      const tier = document.getElementById('ticketTierSelect').value;
+      const feedbackBox = document.getElementById('formFeedbackBox');
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">progress_activity</span><span>Dispatching POST...</span>';
+
+      EventApi.register(eventId)
+        .then(data => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-base">send</span><span>Submit POST /api/registrations</span>';
+          feedbackBox.classList.remove('hidden', 'bg-error-container', 'text-on-error-container');
+          feedbackBox.classList.add('bg-surface-container-high', 'text-primary');
+          feedbackBox.innerHTML = '<div class="flex items-center gap-1 font-bold"><span class="material-symbols-outlined text-sm">task_alt</span><span>201 Created: Registration Active!</span></div><span class="text-on-surface-variant font-label-code-sm">ID: ' + (data.id || data.registration_id || 'created') + ' • Tier: ' + tier + '</span>';
+          loadLiveRegistrations(true);
+        })
+        .catch(error => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-base">send</span><span>Submit POST /api/registrations</span>';
+          feedbackBox.classList.remove('hidden', 'bg-surface-container-high', 'text-primary');
+          feedbackBox.classList.add('bg-error-container', 'text-on-error-container');
+          feedbackBox.innerHTML = '<strong>' + (error.status === 409 ? '409 Conflict: Already registered.' : error.message) + '</strong>';
+        });
+      return;
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-base">send</span><span>Submit POST /api/registrations</span>';
+        
+        feedbackBox.classList.remove('hidden', 'bg-error-container', 'text-on-error-container');
+        feedbackBox.classList.add('bg-surface-container-high', 'text-primary');
+        feedbackBox.innerHTML = `
+          <div class="flex items-center gap-1 font-bold">
+            <span class="material-symbols-outlined text-sm">task_alt</span> 
+            <span>201 Created: Registration Active!</span>
+          </div>
+          <span class="text-on-surface-variant font-label-code-sm">ID: reg_new_${Math.floor(Math.random()*8999+1000)} &bull; Tier: ${tier}</span>
+        `;
+
+        // Prepend new card to the list dynamically
+        const list = document.getElementById('registrationsListContainer');
+        const newCard = document.createElement('div');
+        newCard.className = 'rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col md:flex-row justify-between gap-space-md relative overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300';
+        newCard.innerHTML = `
+          <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+          <div class="flex gap-space-md items-start">
+            <div class="w-16 h-16 rounded-lg bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+              <span class="font-label-ui text-label-ui text-primary uppercase font-bold">JAN</span>
+              <span class="font-headline-md text-headline-md text-on-surface font-extrabold">14</span>
+            </div>
+            <div class="flex flex-col gap-1 min-w-0">
+              <div class="flex items-center gap-space-xs flex-wrap">
+                <span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-code-sm text-label-code-sm font-semibold">${tier}</span>
+                <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-code-sm text-label-code-sm font-semibold">Confirmed</span>
+                <span class="font-label-code-sm text-label-code-sm text-outline">${eventId}</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Distributed Systems &amp; Concurrency Conf</h3>
+              <div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm flex-wrap mt-0.5">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-outline">badge</span> Seat Auto-Assigned</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:flex-col items-end justify-between gap-space-sm pt-2 md:pt-0">
+            <button onclick="openQrModal('Distributed Systems Conf', '${tier}', '${eventId}', 'ALEX MERCER')" class="px-3 py-1.5 rounded-lg bg-primary-fixed text-primary font-label-ui text-label-ui hover:bg-primary-container hover:text-on-primary transition-colors flex items-center gap-1 shadow-sm">
+              <span class="material-symbols-outlined text-base">qr_code_2</span><span>View QR</span>
+            </button>
+          </div>
+        `;
+        list.prepend(newCard);
+        showToast('Successfully registered via POST /api/registrations (201 Created)');
+      }, 750);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="EventHub API Platform Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-body-md text-on-surface-variant">EventPulse Engine</span></div><span class="font-body-sm text-body-sm text-outline">© 2025 DevEvent Core Infrastructure. All rights reserved.</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">API Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Rate Limits</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">SDKs &amp; Webhooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Security RFC</a></div></div></footer></body></html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#653e00","on-primary-fixed-variant":"#3323cc","on-tertiary-fixed":"#001f26","on-primary-fixed":"#0f0069","tertiary":"#00505f","on-error":"#ffffff","secondary-fixed":"#ffddb8","on-background":"#131b2e","on-secondary":"#ffffff","primary-container":"#4f46e5","surface-container-high":"#e2e7ff","on-primary-container":"#dad7ff","error":"#ba1a1a","error-container":"#ffdad6","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary":"#ffffff","outline-variant":"#c7c4d8","surface-container-lowest":"#ffffff","inverse-primary":"#c3c0ff","surface-container-highest":"#dae2fd","surface-container-low":"#f2f3ff","background":"#faf8ff","on-secondary-fixed":"#2a1700","surface-dim":"#d2d9f4","primary-fixed-dim":"#c3c0ff","surface-bright":"#faf8ff","on-error-container":"#93000a","secondary-container":"#fea619","tertiary-fixed":"#acedff","tertiary-fixed-dim":"#4cd7f6","primary":"#3525cd","on-surface-variant":"#464555","on-tertiary-container":"#93e8ff","tertiary-container":"#006a7c","inverse-surface":"#283044","on-secondary-container":"#684000","primary-fixed":"#e2dfff","on-primary":"#ffffff","secondary-fixed-dim":"#ffb95f","surface-tint":"#4d44e3","outline":"#777587","surface":"#faf8ff","surface-container":"#eaedff","on-tertiary-fixed-variant":"#004e5c","secondary":"#855300"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xl":"2.25rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2rem","space-md":"0.875rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-code-lg":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-ui":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-code-md":["JetBrains Mono"]},"fontSize":{"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-code-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-code-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-code-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-margin flex flex-col justify-between"><div class="h-16 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="EventHub API Platform Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">EventPulse</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Live API v1.4 • Connected</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" placeholder="Search endpoints, events, tags... (Press / to focus)" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex flex-col text-right"><span class="font-label-ui text-label-ui text-on-surface">DevCore Operations</span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Logged in as Organizer</span></div><div class="flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2EHgM2pV8agPbJnoiW3Of2JYld01jjARkqaku7xMYnWPOIszjzHf0kpUl6ZbOtwiHBnJ7Km8v68aNnqm7etSCR1pPHyZdibHbs9_YwJ6I6D4SMIEST0FupajVCo9l56DBSkDsR3Zxo3tknI9F0mapoTlWMNwRovJYGzYV5GJYK8fMu1Bbbao7pOd0lxbIQ9XRFrw6QHe2-DCIP9OBTCu-Fs_5YL4qz7jXEbZC_Blv"/><span class="material-symbols-outlined text-outline text-base pr-1 hidden sm:inline">expand_more</span></div></div></div><div class="h-12 flex items-center justify-between"><nav class="flex items-center gap-space-xs h-full py-1.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-lg"><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-headline-md rounded-lg" data-path="explore-events" href="#">Explore Events</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="api-explorer" href="#">API Explorer</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-registrations" href="#">My Registrations</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organizer-console" href="#">Organizer Console</a><a class="px-space-md py-1.5 rounded-lg font-label-ui text-label-ui text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="documentation" href="#">Docs</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="font-label-code-sm text-label-code-sm text-outline">REGION</span><span class="font-label-code-sm text-label-code-sm text-primary font-semibold">us-east-1</span></div></div></div></div></header><main class="w-full pt-28 bg-background"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Header Section with Monospace Metadata -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-code-sm text-label-code-sm text-primary tracking-wide">INDEX QUERY</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            STATUS: 200 OK (28ms)
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Developer Events &amp; Tech Conferences</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Browse upcoming developer conferences, hackathons, and workshops available via the <code class="px-1.5 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-primary">GET /api/events</code> endpoint.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-code-sm text-label-code-sm text-on-surface transition-colors shadow-sm" id="raw-json-toggle">
+<span class="material-symbols-outlined text-sm">terminal</span>
+          View JSON Response
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">add_circle</span>
+          + Host New Event
+        </button>
+</div>
+</div>
+<!-- Collapsible Live JSON Inspector Strip -->
+<div class="hidden transition-all duration-300" id="json-viewer-drawer">
+<div class="w-full rounded-xl bg-inverse-surface text-inverse-on-surface p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-code-sm text-label-code-sm">200 OK</span>
+<span class="font-label-code-sm text-label-code-sm text-outline-variant">Payload: Schema EventPageCollection</span>
+</div>
+<button class="text-outline-variant hover:text-inverse-on-surface p-1" id="close-json-btn">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<pre class="font-label-code-sm text-label-code-sm overflow-x-auto text-inverse-primary bg-inverse-surface/80 p-space-sm rounded"><code>{
+  "status": "success",
+  "data": {
+    "total": 48,
+    "limit": 10,
+    "page": 1,
+    "has_next": true,
+    "events": [
+      { "id": "evt_cloud26", "name": "Global Cloud &amp; API Summit 2026", "format": "hybrid", "status": "open" },
+      { "id": "evt_k8s_ber26", "name": "NextGen Kubernetes &amp; Microservices Con", "format": "in-person", "price": 199 }
+    ]
+  }
+}</code></pre>
+</div>
+</div>
+<!-- Search & Filter Console Bar -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Search Input -->
+<div class="lg:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4f46e5] transition-all" id="event-search-input" placeholder="Search by event name, keyword, or speaker..." type="text"/>
+</div>
+<!-- Topic Chips Selector -->
+<div class="lg:col-span-5 flex items-center gap-space-xs overflow-x-auto py-1">
+<button class="topic-chip active px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-ui text-label-ui shadow-sm transition-all">All Topics</button>
+<button class="topic-chip px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-ui text-label-ui transition-all">AI/ML</button>
+<button class="topic-chip px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-ui text-label-ui transition-all">Backend</button>
+<button class="topic-chip px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-ui text-label-ui transition-all">Cloud &amp; DevOps</button>
+<button class="topic-chip px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-ui text-label-ui transition-all">Web</button>
+</div>
+<!-- Sort Select -->
+<div class="lg:col-span-3 flex items-center justify-end gap-space-sm">
+<span class="font-label-ui text-label-ui text-outline hidden sm:inline">Sort:</span>
+<div class="relative w-full sm:w-auto">
+<select class="w-full sm:w-44 h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none appearance-none cursor-pointer pr-8">
+<option>Upcoming First</option>
+<option>Popularity</option>
+<option>Recently Added</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-outline text-lg">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- Secondary Filters Line -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Format Pills -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="format-btn px-space-sm py-1 rounded bg-surface-container-lowest font-label-code-sm text-label-code-sm text-primary shadow-sm">All Formats</button>
+<button class="format-btn px-space-sm py-1 rounded font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-on-surface">In-Person</button>
+<button class="format-btn px-space-sm py-1 rounded font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-on-surface">Hybrid</button>
+<button class="format-btn px-space-sm py-1 rounded font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-on-surface">Virtual</button>
+</div>
+<!-- Date Quick Picker -->
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-outline text-base">calendar_today</span>
+<span class="font-label-ui text-label-ui text-on-surface-variant">Dates: Next 90 Days</span>
+<span class="material-symbols-outlined text-outline text-sm">arrow_drop_down</span>
+</div>
+<!-- Price Toggle -->
+<div class="flex items-center gap-space-xs pl-space-xs">
+<span class="font-label-ui text-label-ui text-on-surface-variant">Free Only</span>
+<button aria-checked="false" class="w-9 h-5 rounded-full bg-surface-container-high relative p-0.5 transition-colors" id="free-toggle" role="switch">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transition-transform duration-200 translate-x-0"></span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Streaming updates via SSE
+        </div>
+</div>
+</div>
+<!-- Featured Event Hero Card -->
+<div class="w-full rounded-2xl bg-surface-container-lowest p-space-lg shadow-md relative overflow-hidden flex flex-col lg:flex-row gap-space-lg">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<!-- Left Content Details -->
+<div class="flex-1 flex flex-col justify-between gap-space-md z-10">
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-primary-fixed text-primary font-label-code-sm text-label-code-sm font-semibold">GET /api/events/evt_cloud26</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-ui text-label-ui font-bold">Featured Summit</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-ui text-label-ui">Hybrid</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Global Cloud &amp; API Summit 2026</h2>
+<div class="flex flex-wrap items-center gap-space-md font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">calendar_month</span>
+              Nov 18-20, 2026
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+              San Francisco, CA &amp; Virtual
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">mic</span>
+              42 Keynotes &amp; Workshops
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 max-w-3xl">
+            The premier international architecture conference focusing on hyperscale distributed systems, OpenAPI 4.0 specs, Kubernetes orchestration, and AI gateway infrastructure.
+          </p>
+</div>
+<!-- Capacity Metric & Progress Bar -->
+<div class="flex flex-col gap-1.5 max-w-md">
+<div class="flex items-center justify-between font-label-code-sm text-label-code-sm">
+<span class="text-on-surface font-semibold">Capacity Allocation</span>
+<span class="text-primary font-semibold">840 / 1,000 registered (84%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 84%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">160 general admission passes remaining in tiered allocation.</span>
+</div>
+<!-- Call to Actions -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-all shadow-sm" onclick="triggerRegistration('evt_cloud26', 'Global Cloud &amp; API Summit 2026', 'POST /api/registrations')">
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+            Register via API (POST /api/registrations)
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-ui text-label-ui transition-colors" onclick="openEventDrawer('evt_cloud26', 'Global Cloud &amp; API Summit 2026', 'San Francisco &amp; Remote', 'Nov 18-20, 2026', '$499 / Hybrid', '840/1000')">
+            View Details &amp; Payload
+          </button>
+</div>
+</div>
+<!-- Right Card Graphic & Key Metric Tile -->
+<div class="w-full lg:w-96 flex flex-col gap-space-md z-10 justify-between">
+<div class="w-full h-44 rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern high-tech developer conference keynote stage with purple and indigo volumetric ambient lighting, giant LED projection screens showing cloud architecture topology, and an engaged audience of software engineers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWytRsoP3KTgXSzL6pKjrnodOsASNKqf3gIF2UlNLcGW_qNyrK3H5giXtqCNDlJNB8a9UpUXYcJkMMNR5bYNx5v_i1B0KGfeMZaozrJyo6TgrIA7YGKOHFrRseL9gwXP0tjovfqEtR3Rjhlh9OJFMZYbkhC_bN0iOVUHP7PlcyeQ_y2izMjXJrQDbzl2SC9GQx8RD5eSrJgcW6JVQzjfagt5bYgmi305bD7DxrkR0a"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-sm">
+<span class="font-label-code-sm text-label-code-sm text-inverse-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary-container">verified</span>
+              Live Broadcast Verified
+            </span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-code-sm text-label-code-sm text-outline">HTTP ENDPOINT</span>
+<span class="font-label-code-md text-label-code-md text-on-surface font-semibold">GET /events/evt_cloud26</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-primary font-label-code-sm text-label-code-sm shadow-sm">200 OK</span>
+</div>
+</div>
+</div>
+<!-- Main Content Dual-Pane Section: Grid + Drawer Preview -->
+<div class="w-full grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Event Cards Grid Deck -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Available Conferences</h3>
+<span id="event-count-label" class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-code-sm text-label-code-sm">Loading events…</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-outline">
+<span>Filter Active:</span>
+<span class="text-primary font-medium">All Topics</span>
+</div>
+</div>
+<div id="live-events-grid" class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card 1 -->
+<div class="event-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Atmospheric technology conference auditorium in Berlin with software developers working on laptops with code editors, stage lights in deep indigo and amber hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgujcGLFe_YPKsU_zrrT2E5NLgUiY6bw0L52U-XbfZ--cDX0OpUk2U72b_5K-f_XyQN3Uclflc0GwrTOcghE3AwVXdkLJu0jaA30pGdsR8RhxalXdDOdD5vqdv1aK5DVVrkYDirDcXA9zwi0mNLHE2ny_XKyWa74p4JX5N53IfyzwUi1o9QDTuytroYWxUwX2_0kXr82_-dhenXUeyzt6iMeygOgX-TgrCm5ZTJJmz"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-code-sm text-label-code-sm text-primary font-semibold">evt_k8s_ber26</span>
+</div>
+<div class="absolute bottom-2 right-2">
+<span class="px-2 py-0.5 rounded bg-inverse-surface/90 text-inverse-on-surface font-label-ui text-label-ui font-semibold">$199 USD</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-code-sm text-label-code-sm pt-1">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">calendar_today</span>
+                  Oct 28, 2026
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                  Berlin, Germany
+                </span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-on-surface leading-tight">NextGen Kubernetes &amp; Microservices Con</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Deep dives into service meshes, eBPF telemetry, distributed state management, and large cluster reliability.
+              </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Kubernetes</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Go</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">DevOps</span>
+</div>
+</div>
+<!-- Card Bottom Bar -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col font-label-code-sm text-label-code-sm">
+<span class="text-outline">ATTENDEES</span>
+<span class="text-on-surface font-semibold">512 / 600</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="openEventDrawer('evt_k8s_ber26', 'NextGen Kubernetes &amp; Microservices Con', 'Berlin, Germany', 'Oct 28, 2026', '$199 USD', '512/600')">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors" onclick="triggerRegistration('evt_k8s_ber26', 'NextGen Kubernetes &amp; Microservices Con', 'POST /api/registrations')">
+                  Register
+                </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="event-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern New York loft venue filled with frontend engineers watching a live coding UI presentation on sleek widescreen displays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjPZFr6A5DvtR1d_a15qGmtev7o6KQXBq5RZG6A23bbrZ1DG_fHZcnvG7AoH_a8HdeyXhjM75hotdV8urA6K4VwkBlcEe4HarUmRflb7r7ypN9F6uV4jUNUCLTQ0Iq2IoSh6d6fSP-vT1JwV0ryMBLIXggkFZy5eTdfxEtst8r0dRCUhzEKlxnGNclgCsyuc6haIrjGukPX4k7zeW6LTCriwGdcBpoBbn40RhsEOMx"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-code-sm text-label-code-sm text-primary font-semibold">evt_react_nyc26</span>
+</div>
+<div class="absolute bottom-2 right-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-ui text-label-ui font-semibold">Free Event</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-code-sm text-label-code-sm pt-1">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">calendar_today</span>
+                  Nov 05, 2026
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                  New York, USA
+                </span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-on-surface leading-tight">React &amp; Modern Frontend Nexus</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Exploring React Server Components, client runtime optimization, Next.js architecture, and typed design tokens.
+              </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">UI</span>
+</div>
+</div>
+<!-- Card Bottom Bar -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col font-label-code-sm text-label-code-sm">
+<span class="text-outline">ATTENDEES</span>
+<span class="text-on-surface font-semibold">380 / 400</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="openEventDrawer('evt_react_nyc26', 'React &amp; Modern Frontend Nexus', 'New York, USA', 'Nov 05, 2026', 'Free', '380/400')">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors" onclick="triggerRegistration('evt_react_nyc26', 'React &amp; Modern Frontend Nexus', 'POST /api/registrations')">
+                  Register
+                </button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="event-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic conference hall in Seattle showing digital neural networks and vector database topology on large transparent monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7xfxXCLMvX0UcaZN2VfEjTlncmPtOoDOhhR4Q5Hl5EjN2WmJ_a8huw2rpmCdViZ5eyvbwRL0YWQtz0PXqszXTa6elpYeql_QBrd_lY45ulfmhO4ynnzeqnO8MdaVze2hwqkuZ-9CA6FxRyF4gkAVoHJQg75IRdpnTuXGua0UIuOEKWOCdEyfQAC-K93V0cavjcxYqvJ5GEu0tQH3er9eGVWHU5hlQz3aOjxnfiIcq"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-code-sm text-label-code-sm text-primary font-semibold">evt_llm_sea26</span>
+</div>
+<div class="absolute bottom-2 right-2">
+<span class="px-2 py-0.5 rounded bg-inverse-surface/90 text-inverse-on-surface font-label-ui text-label-ui font-semibold">$299 USD</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-code-sm text-label-code-sm pt-1">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">calendar_today</span>
+                  Dec 02, 2026
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                  Seattle, USA
+                </span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-on-surface leading-tight">AI Agents &amp; LLM Infrastructure Expo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Production multi-agent frameworks, semantic routing, GPU orchestration, and fine-tuning pipelines.
+              </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">AI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Python</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">LLM</span>
+</div>
+</div>
+<!-- Card Bottom Bar -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col font-label-code-sm text-label-code-sm">
+<span class="text-outline">ATTENDEES</span>
+<span class="text-on-surface font-semibold">720 / 800</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="openEventDrawer('evt_llm_sea26', 'AI Agents &amp; LLM Infrastructure Expo', 'Seattle, USA', 'Dec 02, 2026', '$299 USD', '720/800')">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors" onclick="triggerRegistration('evt_llm_sea26', 'AI Agents &amp; LLM Infrastructure Expo', 'POST /api/registrations')">
+                  Register
+                </button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="event-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Abstract cyber-minimalist studio graphic with neon traces illustrating distributed data pipelines and high-throughput network nodes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD397Sp537cmkA8BAdMR-Khc5z_v7iuu2EuR185OUjuFtdPRZmUJcaDPcxwjtkhXD5PIb45Jz38zwKJtZaeSn6EjR-wLCJUhhkV9cu0jBvZLy4pjho1j7H7sT59VvzdftnshG5_ukdQ21pYNq4wjghLudOcrODSWNYVWbTbtLqUB6EriRqUw7gZXVhzyS8Y9Sev_TXxO0-RLulstxvlV1KTfs7StYA29ajH70LNgcIf"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-code-sm text-label-code-sm text-primary font-semibold">evt_dist_sys26</span>
+</div>
+<div class="absolute bottom-2 right-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-ui text-label-ui font-semibold">Free Event</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-code-sm text-label-code-sm pt-1">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">calendar_today</span>
+                  Dec 14, 2026
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">language</span>
+                  Remote (Global)
+                </span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-on-surface leading-tight">Distributed Systems Architecture Day</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Event sourcing patterns, consensus algorithms, high-throughput Kafka streaming, and safe concurrency in Rust.
+              </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Kafka</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Rust</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-on-surface-variant">Architecture</span>
+</div>
+</div>
+<!-- Card Bottom Bar -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col font-label-code-sm text-label-code-sm">
+<span class="text-outline">ATTENDEES</span>
+<span class="text-on-surface font-semibold">1,240 / 2,000</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="openEventDrawer('evt_dist_sys26', 'Distributed Systems Architecture Day', 'Remote (Global)', 'Dec 14, 2026', 'Free', '1240/2000')">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors" onclick="triggerRegistration('evt_dist_sys26', 'Distributed Systems Architecture Day', 'POST /api/registrations')">
+                  Register
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination & Rate Limits Info -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span>Page 1 of 12</span>
+<span>•</span>
+<span>X-RateLimit-Remaining: 982/1000</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1 rounded bg-surface-container text-outline cursor-not-allowed font-label-ui text-label-ui">Previous</button>
+<button class="px-space-md py-1 rounded bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary font-label-ui text-label-ui transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Quick Event Drawer / API Inspector Side Panel (Right Column) -->
+<div class="xl:col-span-4 sticky top-32 flex flex-col gap-space-md">
+<!-- Live Action Preview Container -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-headline-md text-headline-md text-on-surface">API Payload Inspector</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-label-code-sm text-primary">v1.4 Spec</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-code-sm text-label-code-sm">
+<span class="text-outline">TARGET ENDPOINT</span>
+<span class="text-primary font-semibold" id="active-endpoint-badge">GET /api/events/evt_cloud26</span>
+</div>
+<h5 class="font-headline-md text-body-lg text-on-surface font-bold" id="inspector-event-title">Global Cloud &amp; API Summit 2026</h5>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="inspector-event-meta">Nov 18-20, 2026 • San Francisco, CA &amp; Virtual</span>
+</div>
+<!-- Code View Block -->
+<div class="rounded-xl bg-inverse-surface p-space-md text-inverse-on-surface shadow-inner flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline-variant font-label-code-sm text-label-code-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="ml-1 text-inverse-primary">payload_preview.json</span>
+</div>
+<button class="hover:text-inverse-on-surface" onclick="navigator.clipboard.writeText(document.getElementById('code-display').innerText)">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<pre class="font-label-code-sm text-label-code-sm overflow-x-auto text-inverse-primary pt-2 max-h-56"><code id="code-display">{
+  "id": "evt_cloud26",
+  "name": "Global Cloud &amp; API Summit 2026",
+  "dates": {
+    "start": "2026-11-18T09:00:00Z",
+    "end": "2026-11-20T18:00:00Z"
+  },
+  "pricing": {
+    "tier": "hybrid",
+    "amount": 499,
+    "currency": "USD"
+  },
+  "capacity": {
+    "total": 1000,
+    "registered": 840,
+    "status": "available"
+  },
+  "auth_required": false
+}</code></pre>
+</div>
+<!-- Live Registration Simulator -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-ui text-label-ui text-on-surface-variant font-semibold">API Quick Registration</span>
+<div class="flex gap-space-xs">
+<input class="flex-1 h-9 px-space-sm rounded-lg bg-surface-container-low font-label-code-sm text-label-code-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="dev-email-input" placeholder="dev.handle@domain.io" type="email" value="architect@eventpulse.dev"/>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui hover:bg-primary transition-colors flex items-center gap-1" id="drawer-register-btn" onclick="executeDrawerRegister()">
+<span class="material-symbols-outlined text-sm">send</span>
+                POST
+              </button>
+</div>
+</div>
+<!-- Execution Status Banner (Dynamic) -->
+<div class="hidden p-space-sm rounded-lg bg-surface-container flex flex-col gap-1 transition-all" id="execution-response">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                HTTP 201 Created
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-outline">18ms</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface" id="execution-message">Ticket reservation secured. Webhook dispatched.</span>
+</div>
+<!-- API Callout Tip -->
+<div class="p-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base mt-0.5">key</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui font-bold">Bearer Authentication</span>
+<span class="font-body-sm text-body-sm">All registration mutations require an API token with <code>events:write</code> scope.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="../api.js"></script>
+<script>
+  const eventImages = [
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuD2EHgM2pV8agPbJnoiW3Of2JYld01jjARkqaku7xMYnWPOIszjzHf0kpUl6ZbOtwiHBnJ7Km8v68aNnqm7etSCR1pPHyZdibHbs9_YwJ6I6D4SMIEST0FupajVCo9l56DBSkDsR3Zxo3tknI9F0mapoTlWMNwRovJYGzYV5GJYK8fMu1Bbbao7pOd0lxbIQ9XRFrw6QHe2-DCIP9OBTCu-Fs_5YL4qz7jXEbZC_Blv',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuAWytRsoP3KTgXSzL6pKjrnodOsASNKqf3gIF2UlNLcGW_qNyrK3H5giXtqCNDlJNB8a9UpUXYcJkMMNR5bYNx5v_i1B0KGfeMZaozrJyo6TgrIA7YGKOHFrRseL9gwXP0tjovfqEtR3Rjhlh9OJFMZYbkhC_bN0iOVUHP7PlcyeQ_y2izMjXJrQDbzl2SC9GQx8RD5eSrJgcW6JVQzjfagt5bYgmi305bD7DxrkR0a',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuDgujcGLFe_YPKsU_zrrT2E5NLgUiY6bw0L52U-XbfZ--cDX0OpUk2U72b_5K-f_XyQN3Uclflc0GwrTOcghE3AwVXdkLJu0jaA30pGdsR8RhxalXdDOdD5vqdv1aK5DVVrkYDirDcXA9zwi0mNLHE2ny_XKyWa74p4JX5N53IfyzwUi1o9QDTuytroYWxUwX2_0kXr82_-dhenXUeyzt6iMeygOgX-TgrCm5ZTJJmz'
+  ];
+
+  function htmlEscape(value) {
+    return String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  }
+
+  function eventValue(event, keys, fallback = '') {
+    for (const key of keys) if (event[key] !== undefined && event[key] !== null) return event[key];
+    return fallback;
+  }
+
+  function renderLiveEvents(events) {
+    const grid = document.getElementById('live-events-grid');
+    const count = document.getElementById('event-count-label');
+    if (!grid) return;
+    const list = Array.isArray(events) ? events : (events.events || events.results || []);
+    if (count) count.innerText = list.length + ' Events Loaded';
+    if (!list.length) {
+      grid.innerHTML = '<div class="col-span-full rounded-xl bg-surface-container-low p-6 text-on-surface-variant">No events were returned by GET /api/events.</div>';
+      return;
+    }
+    grid.innerHTML = list.map((event, index) => {
+      const id = eventValue(event, ['id', 'event_id'], 'event-' + index);
+      const title = eventValue(event, ['name', 'title'], id);
+      const location = eventValue(event, ['location', 'venue'], 'Online');
+      const date = eventValue(event, ['date', 'schedule', 'start_date'], 'Date to be announced');
+      const description = eventValue(event, ['description', 'summary'], 'Event details available from the API.');
+      const pricing = eventValue(event, ['pricing', 'price'], 'Free');
+      const priceText = typeof pricing === 'object' ? (pricing.amount ? pricing.amount + ' ' + (pricing.currency || '') : (pricing.tier || 'Free')) : pricing;
+      const capacity = eventValue(event, ['capacity'], '—');
+      const capacityText = typeof capacity === 'object' ? ((capacity.current || capacity.registered || 0) + ' / ' + (capacity.total || capacity.limit || '—')) : capacity;
+      const tags = eventValue(event, ['tags', 'topics'], []);
+      const tagList = Array.isArray(tags) ? tags : String(tags).split(',').map(tag => tag.trim()).filter(Boolean);
+      return '<article class="event-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group" data-title="' + htmlEscape(title.toLowerCase()) + '">' +
+        '<div class="flex flex-col gap-space-sm"><div class="w-full h-36 rounded-lg overflow-hidden relative"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="' + eventImages[index % eventImages.length] + '" alt="' + htmlEscape(title) + '"><div class="absolute top-2 left-2"><span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/90 font-label-code-sm text-primary font-semibold">' + htmlEscape(id) + '</span></div><div class="absolute bottom-2 right-2"><span class="px-2 py-0.5 rounded bg-inverse-surface/90 text-inverse-on-surface font-label-ui font-semibold">' + htmlEscape(priceText) + '</span></div></div>' +
+        '<div class="flex items-center justify-between text-outline font-label-code-sm pt-1"><span class="flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span>' + htmlEscape(date) + '</span><span class="flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary">location_on</span>' + htmlEscape(location) + '</span></div>' +
+        '<h4 class="font-headline-md text-body-lg font-bold text-on-surface leading-tight">' + htmlEscape(title) + '</h4><p class="font-body-sm text-on-surface-variant line-clamp-2">' + htmlEscape(description) + '</p><div class="flex flex-wrap gap-1.5 pt-1">' + tagList.map(tag => '<span class="px-2 py-0.5 rounded bg-surface-container font-label-code-sm text-on-surface-variant">' + htmlEscape(tag) + '</span>').join('') + '</div></div>' +
+        '<div class="pt-space-xs flex items-center justify-between"><div class="flex flex-col font-label-code-sm"><span class="text-outline">ATTENDEES</span><span class="text-on-surface font-semibold">' + htmlEscape(capacityText) + '</span></div><div class="flex items-center gap-space-xs"><button class="live-view-event p-2 rounded-lg bg-surface-container text-on-surface" data-id="' + htmlEscape(id) + '">View</button><button class="live-register-event px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui" data-id="' + htmlEscape(id) + '">Register</button></div></div></article>';
+    }).join('');
+    grid.querySelectorAll('.live-view-event').forEach(button => button.addEventListener('click', () => {
+      const event = list.find(item => String(eventValue(item, ['id', 'event_id'])) === button.dataset.id) || {};
+      openEventDrawer(button.dataset.id, eventValue(event, ['name', 'title'], button.dataset.id), eventValue(event, ['location', 'venue'], 'Online'), eventValue(event, ['date', 'schedule', 'start_date'], 'Date to be announced'), eventValue(event, ['pricing', 'price'], 'Free'), eventValue(event, ['capacity'], '—'));
+    }));
+    grid.querySelectorAll('.live-register-event').forEach(button => button.addEventListener('click', () => triggerRegistration(button.dataset.id, 'Event ' + button.dataset.id, 'POST /api/registrations')));
+  }
+
+  function loadLiveEvents() {
+    EventApi.getEvents().then(renderLiveEvents).catch(error => {
+      const grid = document.getElementById('live-events-grid');
+      const count = document.getElementById('event-count-label');
+      if (count) count.innerText = 'API unavailable';
+      if (grid) grid.innerHTML = '<div class="col-span-full rounded-xl bg-error-container p-6 text-on-error-container"><strong>Could not load live events.</strong><br>' + htmlEscape(error.message) + '<br><small>Check that the Render backend is running and its Supabase environment variables are configured.</small></div>';
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadLiveEvents);
+
+  // Topic Chip Toggle
+  document.querySelectorAll('.topic-chip').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.topic-chip').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      button.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Format Toggle
+  document.querySelectorAll('.format-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.format-btn').forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+
+  // Free Only Switch
+  const freeToggle = document.getElementById('free-toggle');
+  if (freeToggle) {
+    freeToggle.addEventListener('click', () => {
+      const isChecked = freeToggle.getAttribute('aria-checked') === 'true';
+      freeToggle.setAttribute('aria-checked', !isChecked);
+      const circle = freeToggle.querySelector('span');
+      if (!isChecked) {
+        freeToggle.classList.remove('bg-surface-container-high');
+        freeToggle.classList.add('bg-primary-container');
+        circle.classList.add('translate-x-4');
+      } else {
+        freeToggle.classList.add('bg-surface-container-high');
+        freeToggle.classList.remove('bg-primary-container');
+        circle.classList.remove('translate-x-4');
+      }
+    });
+  }
+
+  // Raw JSON Inspector Drawer
+  const jsonToggle = document.getElementById('raw-json-toggle');
+  const jsonDrawer = document.getElementById('json-viewer-drawer');
+  const closeJson = document.getElementById('close-json-btn');
+
+  if (jsonToggle && jsonDrawer) {
+    jsonToggle.addEventListener('click', () => {
+      jsonDrawer.classList.toggle('hidden');
+    });
+  }
+  if (closeJson && jsonDrawer) {
+    closeJson.addEventListener('click', () => {
+      jsonDrawer.classList.add('hidden');
+    });
+  }
+
+  // Update Drawer / Payload Preview
+  function openEventDrawer(id, title, location, date, price, capacity) {
+    const titleEl = document.getElementById('inspector-event-title');
+    const metaEl = document.getElementById('inspector-event-meta');
+    const badgeEl = document.getElementById('active-endpoint-badge');
+    const codeEl = document.getElementById('code-display');
+
+    if (titleEl) titleEl.innerText = title;
+    if (metaEl) metaEl.innerText = date + " • " + location;
+    if (badgeEl) badgeEl.innerText = "GET /api/events/" + id;
+
+    const dummyPayload = {
+      id: id,
+      name: title,
+      location: location,
+      schedule: date,
+      pricing: price,
+      capacity_allocation: capacity,
+      api_rate_status: "verified"
+    };
+
+    if (codeEl) {
+      codeEl.innerText = JSON.stringify(dummyPayload, null, 2);
+    }
+
+    // Replace the design preview with the live event when the backend has it.
+    if (window.EventApi) {
+      EventApi.getEvent(id).then(event => {
+        const liveTitle = event.name || event.title || title;
+        const liveLocation = event.location || location;
+        const liveDate = event.date || event.schedule || event.start_date || date;
+        if (titleEl) titleEl.innerText = liveTitle;
+        if (metaEl) metaEl.innerText = liveDate + " • " + liveLocation;
+        if (badgeEl) badgeEl.innerText = "GET /api/events/" + id;
+        if (codeEl) codeEl.innerText = JSON.stringify(event, null, 2);
+      }).catch(() => {
+        // Keep the designed preview visible when the event is unavailable.
+      });
+    }
+
+    const execBanner = document.getElementById('execution-response');
+    if (execBanner) execBanner.classList.add('hidden');
+  }
+
+  // Quick Action Registration Simulator
+  function triggerRegistration(id, title, method) {
+    openEventDrawer(id, title, "Realtime Endpoint", "Now", "Verified", "Open");
+    executeDrawerRegister(id);
+  }
+
+  async function executeDrawerRegister(eventId) {
+    const execBanner = document.getElementById('execution-response');
+    const execMessage = document.getElementById('execution-message');
+    const emailInput = document.getElementById('dev-email-input');
+    const email = emailInput ? emailInput.value : "developer@eventpulse.dev";
+
+    if (execBanner) {
+      execBanner.classList.remove('hidden');
+      execBanner.classList.add('animate-pulse');
+      setTimeout(() => {
+        execBanner.classList.remove('animate-pulse');
+      }, 500);
+    }
+    try {
+      await EventApi.register(eventId);
+      if (execMessage) execMessage.innerText = "Registration created for " + email + ". Status: 201 Created.";
+    } catch (error) {
+      if (execMessage) execMessage.innerText = error.status === 409
+        ? "You are already registered for this event (409 Conflict)."
+        : (error.status === 401 ? "Sign in with a valid Supabase access token to register." : error.message);
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="EventHub API Platform Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1UHRleUQX2LbdkAUKwG-w8u_CGJmGFNsdUWuIqSbimx2qMRPsb7m2rspbKwiZk5OVZNnvWhSvHCn9_x35HnM0u_4UoYNiTQb2Km-7G1fvKkyeym3RyTTetGMv6sEGUP4AC9WEqvSXTCU2EXfw9lSgz_3onC7MJjgrSDgPmKFu0xax8DjlhrGHhj1vKW14J-r_COOhwIgXZRhTp0FuuDiACrHs5_HW8EM4Rh37b4ADQ1"/><span class="font-headline-md text-body-md text-on-surface-variant">EventPulse Engine</span></div><span class="font-body-sm text-body-sm text-outline">© 2025 DevEvent Core Infrastructure. All rights reserved.</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">API Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Rate Limits</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">SDKs &amp; Webhooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Security RFC</a></div></div></footer></body></html>
