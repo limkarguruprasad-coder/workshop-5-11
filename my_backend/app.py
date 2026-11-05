@@ -94,7 +94,7 @@ def list_events():
 @app.get("/api/events/<event_id>")
 def get_event(event_id: str):
     try:
-        result = supabase.table("events").select("*").eq("id", event_id).maybe_single().execute()
+        result = supabase.table("events").select("*").eq("event_id", event_id).maybe_single().execute()
         if not result.data:
             return api_error("Event not found", 404)
         return jsonify(result.data)
@@ -114,7 +114,7 @@ def create_registration(user: Any):
         if field in body:
             payload[field] = body[field]
     try:
-        event = supabase.table("events").select("id").eq("id", event_id).maybe_single().execute()
+        event = supabase.table("events").select("event_id").eq("event_id", event_id).maybe_single().execute()
         if not event.data:
             return api_error("Event not found", 404)
         result = supabase.table("registrations").insert(payload).execute()
@@ -137,10 +137,11 @@ def my_registrations(user: Any):
 @auth_required
 def event_registrations(user: Any, event_id: str):
     try:
-        event = supabase.table("events").select("organizer_id").eq("id", event_id).maybe_single().execute()
+        event = supabase.table("events").select("*").eq("event_id", event_id).maybe_single().execute()
         if not event.data:
             return api_error("Event not found", 404)
-        if event.data.get("organizer_id") != user.id:
+        owner_id = event.data.get("organizer_id") or event.data.get("student_id")
+        if owner_id != user.id:
             return api_error("Only the event organizer can view attendees", 403)
         result = supabase.table("registrations").select("*").eq("event_id", event_id).execute()
         return jsonify(result.data or [])
